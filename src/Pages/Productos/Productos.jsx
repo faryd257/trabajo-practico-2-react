@@ -44,7 +44,7 @@ const Productos = () => {
     <Layout>
       <header className="productos-header">
         <div className="productos-header-content">
-          <h1>Nuestros productos</h1>
+          <h1>Nuestros Productos</h1>
           <p>Descubre una variedad de productos especialmente seleccionados para ti.</p>
         </div>
       </header>

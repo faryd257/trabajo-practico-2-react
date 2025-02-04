@@ -22,9 +22,11 @@ const Home = () => {
   return (
     <Layout>
       <header className="home-header">
-        <div className="home-banner">
-          <h1>¡Bienvenidos a Nuestra Tienda Online!</h1>
-          <p>Descubre nuestras categorías más destacadas y encuentra productos que se ajustan a tus necesidades.</p>
+        <div className="home-background">
+          <div className="home-banner">
+            <h1>¡Bienvenidos a Nuestra Tienda Online!</h1>
+            <p>Descubre nuestras categorías más destacadas y encuentra productos que se ajustan a tus necesidades.</p>
+          </div>
         </div>
       </header>
 
