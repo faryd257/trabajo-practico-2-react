@@ -1,4 +1,6 @@
 import { Layout } from "../../components/Layout/Layout"; 
+import { Link } from "react-router-dom";
+
 import "./Login.css";
 
 const Login = () => {
@@ -17,12 +19,13 @@ const Login = () => {
           </div>
           <button type="submit">Ingresar</button>
         </form>
-        <p className="register-prompt">
-          ¿No tienes cuenta?{" "}
-          <a href="/Registro" className="register-link">
-            Regístrate aquí
-          </a>
-        </p>
+    <p className="register-prompt">
+  ¿No tienes cuenta?{" "}
+  <Link to="/Registro" className="register-link">
+    Regístrate aquí
+  </Link>
+</p>
+
       </div>
     </Layout>
   );

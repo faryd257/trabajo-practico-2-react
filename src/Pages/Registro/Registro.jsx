@@ -1,4 +1,5 @@
-import { Layout } from "../../components/Layout/Layout"; 
+import { Layout } from "../../components/Layout/Layout";
+import { Link } from "react-router-dom";
 import "./Registro.css";
 
 const Registro = () => {
@@ -33,7 +34,7 @@ const Registro = () => {
         </form>
         <p className="login-prompt">
           ¿Ya tienes una cuenta?{" "}
-          <a href="/Login" className="login-link">Inicia sesión aquí</a>
+          <Link to="/Login" className="login-link">Inicia sesión aquí</Link>
         </p>
       </div>
     </Layout>
@@ -41,3 +42,4 @@ const Registro = () => {
 };
 
 export { Registro };
+
