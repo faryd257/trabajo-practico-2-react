@@ -33,7 +33,7 @@ const Registro = () => {
         </form>
         <p className="login-prompt">
           ¿Ya tienes una cuenta?{" "}
-          <a href="/login" className="login-link">Inicia sesión aquí</a>
+          <a href="/Login" className="login-link">Inicia sesión aquí</a>
         </p>
       </div>
     </Layout>

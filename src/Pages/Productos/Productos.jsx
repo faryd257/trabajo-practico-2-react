@@ -26,7 +26,7 @@ const Productos = () => {
             title: product.title,
             price: product.price,
             description: product.description,
-            images: product.images.length > 0 ? product.images : ["https://via.placeholder.com/300"], // Imagen genérica
+            images: product.images.length > 0 ? product.images : ["https://via.placeholder.com/300"], 
           }));
 
         setProductos(filteredProductos);

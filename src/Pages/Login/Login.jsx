@@ -19,7 +19,7 @@ const Login = () => {
         </form>
         <p className="register-prompt">
           ¿No tienes cuenta?{" "}
-          <a href="/registro" className="register-link">
+          <a href="/Registro" className="register-link">
             Regístrate aquí
           </a>
         </p>
