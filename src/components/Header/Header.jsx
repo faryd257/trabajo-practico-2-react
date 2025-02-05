@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src="/2.jpg" alt="logo" />
+        <img src="/2.jpg" alt="logo" /> 
       </div>
       <button className="menu-icono" onClick={() => setMenuAbierto(!menuAbierto)}>
         ☰
