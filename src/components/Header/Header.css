@@ -1,3 +1,4 @@
+/* Estilo del Header */
 header {
     color: #f5f5f5;
     background-color: #2c3e50;
@@ -7,25 +8,30 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     font-family: 'Arial', sans-serif;
-}
-
-header img {
-    width: 80px;
+    flex-wrap: nowrap; /* Vuelve al formato horizontal en pantallas grandes */
+  }
+  
+  /* Logo */
+  header img {
+    width: 60px; /* Tamaño predeterminado del logo */
     border-radius: 50%;
     border: 2px solid #f5f5f5;
-}
-
-header ul {
+  }
+  
+  /* Lista de navegación */
+  header ul {
     display: flex;
-    gap: 20px;
+    flex-direction: row; /* Lista horizontal en pantallas grandes */
+    gap: 20px; /* Espaciado mayor entre enlaces */
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-header ul li a {
+    align-items: center; /* Alinea enlaces verticalmente */
+  }
+  
+  header ul li a {
     background-color: #1abc9c;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Tamaño estándar de los enlaces */
     border-radius: 30px;
     color: #ffffff;
     text-decoration: none;
@@ -34,21 +40,55 @@ header ul li a {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-}
-
-header ul li a:hover {
+  }
+  
+  /* Hover y Active */
+  header ul li a:hover {
     background-color: #16a085;
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #ecf0f1;
-}
-
-header ul li a:active {
+  }
+  
+  header ul li a:active {
     transform: scale(1);
     background-color: #0e6655;
-}
-
-header ul li a:focus {
+  }
+  
+  header ul li a:focus {
     outline: 2px solid #f39c12;
     outline-offset: 3px;
-}
+  }
+  
+  /* Responsividad */
+  
+  /* Para pantallas pequeñas (menos de 768px) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    header ul {
+      flex-direction: column; /* Lista vertical */
+      gap: 8px; /* Espaciado menor en pantallas pequeñas */
+    }
+  
+    header img {
+      width: 50px; /* Tamaño reducido del logo en móviles */
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (menos de 480px) */
+  @media (max-width: 480px) {
+    header ul li a {
+      font-size: 12px; /* Tamaño más pequeño para enlaces */
+      padding: 6px 12px;
+    }
+  
+    header img {
+      width: 40px; /* Tamaño mínimo del logo */
+    }
+  }
+  
