@@ -118,6 +118,7 @@ header {
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      display: block;
     }
   
     .cerrar-menu:hover {
@@ -140,6 +141,11 @@ header {
   
     .menu ul {
       flex-direction: row;
+    }
+  
+
+    .cerrar-menu {
+      display: none;
     }
   }
   
