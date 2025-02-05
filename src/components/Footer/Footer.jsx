@@ -6,7 +6,7 @@ const Footer =()=>{
 <footer>
 
 <p>sitio desarrollado por 
-    <a href="https://www.linkedin.com/in/faryd-ignacio-ortiz/" target="_blank"> faryd ortiz</a>
+    <a href="https://www.linkedin.com/in/faryd-ignacio-ortiz/" target="_blank"> Faryd Ortiz</a>
 </p>
 </footer>
 
